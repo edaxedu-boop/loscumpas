@@ -338,16 +338,28 @@
     transform: translateY(0);
   }
 
-  .login {
-    display: none;
+  .login,
+  .login-container {
+    display: none !important;
   }
 
-  .mobile-login {
-    display: inline-flex;
-  }
-
-  .mobile-only-link {
+  .mobile-login,
+  .nav a.mobile-only-link {
     display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 44px;
+    margin: 12px 14px 8px !important;
+    border-radius: 24px;
+    font-size: 15px;
+    font-weight: 700;
+    border: 0 !important;
+    border-bottom: 0 !important;
+    cursor: pointer;
+    background: linear-gradient(180deg, #ffe16e, #f3ad19) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 15px rgba(255, 186, 31, 0.4);
   }
 
   .menu-toggle {

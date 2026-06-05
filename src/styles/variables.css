@@ -234,6 +234,10 @@ h1, h2, h3, h4, h5, h6,
   font-size: 15px;
 }
 
+.login-container {
+  display: flex;
+}
+
 .mobile-only-link {
   display: none !important;
 }

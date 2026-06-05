@@ -442,8 +442,8 @@ function App() {
           )}
         </nav>
         {currentUser ? (
-          <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-            <a href={currentUser.role === 'admin' ? '#admin-dashboard' : '#dashboard'} className="login" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <div className="login-container" style={{ gap: '10px', alignItems: 'center' }}>
+            <a href={currentUser.role === 'admin' ? '#admin-dashboard' : '#dashboard'} className="login" style={{ textDecoration: 'none', alignItems: 'center', gap: '8px' }}>
               {currentUser.role === 'admin' ? <Shield size={18} /> : <User size={18} />}
               {currentUser.role === 'admin' ? 'Admin' : 'Mi Cuenta'}
             </a>
@@ -452,7 +452,7 @@ function App() {
             </button>
           </div>
         ) : (
-          <a href="#login" className="login" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <a href="#login" className="login" style={{ textDecoration: 'none', alignItems: 'center', gap: '8px' }}>
             <LogIn size={18} />
             {'Iniciar sesión'}
           </a>
