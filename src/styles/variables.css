@@ -30,7 +30,9 @@ h1, h2, h3, h4, h5, h6,
 [class*="ribbon"],
 .logo-badge,
 .stat-val,
-.ticket-id-large {
+.ticket-id-large,
+.gold-line,
+.white-line {
   font-family: 'Anton', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
 }
 
