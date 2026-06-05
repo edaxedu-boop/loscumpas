@@ -1,0 +1,313 @@
+/* ── FOOTER SECTION ──────────────────────── */
+.footer-section {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(23, 3, 5, 0.9) 0%, rgba(12, 2, 3, 0.98) 100%);
+  border-top: 1.5px solid rgba(255, 225, 110, 0.15);
+  padding: 56px 0 48px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 6vw;
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr 1fr 1.2fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-col h3 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #ffe16e;
+  margin: 0 0 20px;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-col ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-col ul li a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+  color: #ffe16e;
+}
+
+.contact-list svg {
+  color: #ffe16e;
+  flex-shrink: 0;
+}
+
+.contact-hours {
+  font-size: 12px !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  margin-top: 4px;
+  padding-left: 28px;
+  display: block !important;
+}
+
+.contact-help {
+  margin-top: 12px;
+}
+
+.contact-help a {
+  color: #ffe16e !important;
+  font-weight: 700;
+  text-decoration: underline !important;
+}
+
+/* Legal List */
+.col-legal ul li {
+  padding-left: 12px;
+  position: relative;
+}
+
+.col-legal ul li::before {
+  content: "•";
+  color: #ffe16e;
+  position: absolute;
+  left: 0;
+}
+
+/* Certs and Claims book */
+.reclamaciones-badge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 10px 16px;
+  width: 100%;
+  max-width: 220px;
+  height: 56px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.reclamaciones-badge:hover {
+  transform: translateY(-2px);
+}
+
+.reclamaciones-badge .rec-text-top {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #0056b3;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.reclamaciones-badge .rec-text-mid {
+  display: block;
+  font-size: 13px;
+  font-weight: 900;
+  color: #0056b3;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.rec-icon {
+  flex-shrink: 0;
+}
+
+.cert-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cert-label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.cert-logos {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.mock-cert-logo {
+  border: 1px solid rgba(255, 225, 110, 0.25);
+  border-radius: 6px;
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  min-width: 54px;
+}
+
+.mock-cert-logo.iqnet {
+  border-color: #0056b3;
+}
+
+.mock-cert-logo.iqnet span {
+  font-size: 9px;
+  font-weight: 900;
+  color: #0056b3;
+  background: #fff;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.mock-cert-logo.aenor {
+  border-color: #007c30;
+  min-width: 68px;
+}
+
+.aenor-top {
+  font-size: 8px;
+  font-weight: 900;
+  color: #fff;
+  background: #007c30;
+  padding: 1px 3px;
+  border-radius: 2px;
+  line-height: 1;
+}
+
+.aenor-sub {
+  font-size: 6px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 2px;
+  white-space: nowrap;
+}
+
+/* Brand logo and social links */
+.col-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.05;
+  margin-bottom: 24px;
+}
+
+.footer-logo span {
+  font-size: 18px;
+  font-weight: 900;
+  color: #ffe16e;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 10px rgba(255, 186, 31, 0.2);
+}
+
+.footer-logo small {
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.12em;
+  opacity: 0.8;
+}
+
+.footer-logo b {
+  font-size: 26px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.02em;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 225, 110, 0.2);
+  color: #ffe16e;
+  transition: background 0.2s, transform 0.2s, border-color 0.2s;
+}
+
+.social-links a:hover {
+  background: #ffe16e;
+  color: #130d04;
+  border-color: #ffe16e;
+  transform: translateY(-3px);
+}
+
+.footer-copyright {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.5;
+}
+
+.footer-copyright p {
+  margin: 0;
+}
+
+.footer-ruc {
+  margin-top: 4px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .col-brand {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-logo {
+    align-items: center;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+}
