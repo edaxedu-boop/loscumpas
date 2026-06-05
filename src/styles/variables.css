@@ -18,8 +18,20 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Outfit', Arial, Helvetica, sans-serif;
   background: #110a02;
+}
+
+h1, h2, h3, h4, h5, h6,
+[class*="-title"],
+[class*="-badge"],
+[class*="-val"],
+[class*="-number"],
+[class*="ribbon"],
+.logo-badge,
+.stat-val,
+.ticket-id-large {
+  font-family: 'Anton', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
 }
 
 .page {
