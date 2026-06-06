@@ -183,6 +183,18 @@
     background-image: url('https://res.cloudinary.com/dl1pgzshh/image/upload/v1780633616/Dise%C3%B1o_sin_t%C3%ADtulo_14.png') !important;
   }
 
+  @media (max-width: 720px) {
+    .hero-bg-slide.slide-1 {
+      background-image: url('https://res.cloudinary.com/dl1pgzshh/image/upload/v1780785686/Dise%C3%B1o_sin_t%C3%ADtulo_18.png') !important;
+    }
+    .hero-bg-slide.slide-2 {
+      background-image: url('https://res.cloudinary.com/dl1pgzshh/image/upload/v1780785686/ChatGPT_Image_6_jun_2026_16_21_04.png') !important;
+    }
+    .hero-bg-slide.slide-3 {
+      background-image: url('https://res.cloudinary.com/dl1pgzshh/image/upload/v1780785686/ChatGPT_Image_6_jun_2026_16_21_04.png') !important;
+    }
+  }
+
   .page {
     min-height: 900px;
   }
