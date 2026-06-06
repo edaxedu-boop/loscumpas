@@ -160,7 +160,7 @@ h1, h2, h3, h4, h5, h6,
 .logo-badge {
   position: relative !important;
   display: block !important;
-  width: 180px !important;
+  width: 150px !important;
   height: 50px !important;
   background: transparent !important;
   box-shadow: none !important;
@@ -172,39 +172,38 @@ h1, h2, h3, h4, h5, h6,
 
 @media (max-width: 1100px) {
   .logo-badge {
-    width: 140px !important;
+    width: 120px !important;
     height: 50px !important;
   }
 }
 
 @media (max-width: 720px) {
   .logo-badge {
-    width: 110px !important;
+    width: 95px !important;
     height: 44px !important;
   }
 }
 
 .logo-badge-frame {
   position: absolute !important;
-  top: 0 !important;
+  top: -25px !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
-  width: 190px !important;
-  height: 130px !important;
+  width: 150px !important;
+  height: 150px !important;
   background: #ffffff !important;
-  border-bottom-left-radius: 24px !important;
-  border-bottom-right-radius: 24px !important;
+  border-radius: 50% !important;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15), 0 3px 8px rgba(0, 0, 0, 0.05) !important;
   z-index: -1 !important;
 }
 
 .logo-badge-img {
   position: absolute !important;
-  top: 50% !important;
+  top: 10px !important;
   left: 50% !important;
-  transform: translate(-50%, -42%) !important;
-  width: 200px !important;
-  height: 110px !important;
+  transform: translateX(-50%) !important;
+  width: 140px !important;
+  height: 105px !important;
   object-fit: contain !important;
   display: block !important;
   z-index: 10 !important;
@@ -213,29 +212,29 @@ h1, h2, h3, h4, h5, h6,
 
 @media (max-width: 1100px) {
   .logo-badge-frame {
-    width: 150px !important;
-    height: 105px !important;
-    border-bottom-left-radius: 18px !important;
-    border-bottom-right-radius: 18px !important;
+    width: 120px !important;
+    height: 120px !important;
+    top: -20px !important;
   }
   .logo-badge-img {
-    width: 160px !important;
-    height: 90px !important;
-    transform: translate(-50%, -38%) !important;
+    width: 110px !important;
+    height: 80px !important;
+    top: 10px !important;
+    transform: translateX(-50%) !important;
   }
 }
 
 @media (max-width: 720px) {
   .logo-badge-frame {
-    width: 120px !important;
-    height: 90px !important;
-    border-bottom-left-radius: 14px !important;
-    border-bottom-right-radius: 14px !important;
+    width: 95px !important;
+    height: 95px !important;
+    top: -15px !important;
   }
   .logo-badge-img {
-    width: 130px !important;
-    height: 75px !important;
-    transform: translate(-50%, -36%) !important;
+    width: 85px !important;
+    height: 65px !important;
+    top: 6px !important;
+    transform: translateX(-50%) !important;
   }
 }
 
