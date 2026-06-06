@@ -805,8 +805,8 @@ h1 {
   position: fixed !important;
   bottom: 24px !important;
   right: 24px !important;
-  width: 170px !important;
-  height: 125px !important;
+  width: 255px !important; /* Enlarged by 50% */
+  height: 187px !important;
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
@@ -840,7 +840,7 @@ h1 {
   .floating-logo-badge {
     bottom: 16px !important;
     right: 16px !important;
-    width: 110px !important;
-    height: 80px !important;
+    width: 165px !important; /* Enlarged by 50% */
+    height: 120px !important;
   }
 }
