@@ -414,52 +414,54 @@ function App() {
 
       <header className="topbar">
         <LogoBadge />
-        <nav className="nav" aria-label="Principal">
-          {navItems.map((item) => (
-            <a
-              className={currentPage === item.id ? 'active' : ''}
-              href={`#${item.id}`}
-              key={item.id}
-              onClick={() => setMenuOpen(false)}
-            >
-              {item.label}
-            </a>
-          ))}
-          {currentUser ? (
-            <>
-              <a 
-                href={currentUser.role === 'admin' ? '#admin-dashboard' : '#dashboard'} 
-                className={['dashboard', 'admin-dashboard'].includes(currentPage) ? 'active' : ''}
+        <div className="nav-container-wrapper">
+          <nav className="nav" aria-label="Principal">
+            {navItems.map((item) => (
+              <a
+                className={currentPage === item.id ? 'active' : ''}
+                href={`#${item.id}`}
+                key={item.id}
                 onClick={() => setMenuOpen(false)}
               >
-                Panel de Control
+                {item.label}
               </a>
-              <button className="mobile-login" type="button" onClick={() => { setMenuOpen(false); handleLogout(); }}>
-                <LogOut size={18} /> {'Cerrar sesión'}
+            ))}
+            {currentUser ? (
+              <>
+                <a 
+                  href={currentUser.role === 'admin' ? '#admin-dashboard' : '#dashboard'} 
+                  className={['dashboard', 'admin-dashboard'].includes(currentPage) ? 'active' : ''}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Panel de Control
+                </a>
+                <button className="mobile-login" type="button" onClick={() => { setMenuOpen(false); handleLogout(); }}>
+                  <LogOut size={18} /> {'Cerrar sesión'}
+                </button>
+              </>
+            ) : (
+              <a href="#login" className={`mobile-only-link ${currentPage === 'login' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>
+                <LogIn size={18} /> {'Iniciar sesión'}
+              </a>
+            )}
+          </nav>
+          {currentUser ? (
+            <div className="login-container" style={{ gap: '10px', alignItems: 'center' }}>
+              <a href={currentUser.role === 'admin' ? '#admin-dashboard' : '#dashboard'} className="login" style={{ textDecoration: 'none', alignItems: 'center', gap: '8px' }}>
+                {currentUser.role === 'admin' ? <Shield size={18} /> : <User size={18} />}
+                {currentUser.role === 'admin' ? 'Admin' : 'Mi Cuenta'}
+              </a>
+              <button className="login" type="button" onClick={handleLogout} style={{ background: 'rgba(255, 255, 255, 0.12)', color: '#ffe16e', border: '1.5px solid rgba(255, 255, 255, 0.25)' }}>
+                <LogOut size={18} />
               </button>
-            </>
+            </div>
           ) : (
-            <a href="#login" className={`mobile-only-link ${currentPage === 'login' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>
-              <LogIn size={18} /> {'Iniciar sesión'}
+            <a href="#login" className="login" style={{ textDecoration: 'none', alignItems: 'center', gap: '8px' }}>
+              <LogIn size={18} />
+              {'Iniciar sesión'}
             </a>
           )}
-        </nav>
-        {currentUser ? (
-          <div className="login-container" style={{ gap: '10px', alignItems: 'center' }}>
-            <a href={currentUser.role === 'admin' ? '#admin-dashboard' : '#dashboard'} className="login" style={{ textDecoration: 'none', alignItems: 'center', gap: '8px' }}>
-              {currentUser.role === 'admin' ? <Shield size={18} /> : <User size={18} />}
-              {currentUser.role === 'admin' ? 'Admin' : 'Mi Cuenta'}
-            </a>
-            <button className="login" type="button" onClick={handleLogout} style={{ background: 'rgba(255, 255, 255, 0.12)', color: '#ffe16e', border: '1.5px solid rgba(255, 255, 255, 0.25)' }}>
-              <LogOut size={18} />
-            </button>
-          </div>
-        ) : (
-          <a href="#login" className="login" style={{ textDecoration: 'none', alignItems: 'center', gap: '8px' }}>
-            <LogIn size={18} />
-            {'Iniciar sesión'}
-          </a>
-        )}
+        </div>
         <button
           className="menu-toggle"
           type="button"
