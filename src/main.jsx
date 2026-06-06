@@ -768,6 +768,15 @@ function App() {
           </div>
         </div>
       )}
+      
+      {/* Botón flotante del logo en la parte inferior derecha */}
+      <div className="floating-logo-badge" aria-hidden="true">
+        <img
+          src="https://res.cloudinary.com/dl1pgzshh/image/upload/v1780782601/ChatGPT_Image_6_jun_2026_16_48_19.png"
+          alt="Los Cumpas de la Suerte"
+          className="floating-logo-badge-img"
+        />
+      </div>
     </main>
   );
 }

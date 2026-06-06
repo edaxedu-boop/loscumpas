@@ -799,3 +799,49 @@ h1 {
   letter-spacing: 0.8px;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.75);
 }
+
+/* ── FLOATING LOGO BADGE (BOTTOM RIGHT) ── */
+.floating-logo-badge {
+  position: fixed !important;
+  bottom: 24px !important;
+  right: 24px !important;
+  width: 90px !important;
+  height: 90px !important;
+  background: #ffffff !important;
+  border: 3.5px solid #d9900e !important;
+  border-radius: 50% !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.22), 0 0 15px rgba(217, 144, 14, 0.25) !important;
+  z-index: 9999 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  padding: 10px !important;
+  box-sizing: border-box !important;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease !important;
+  cursor: pointer !important;
+}
+
+.floating-logo-badge:hover {
+  transform: scale(1.1) rotate(5deg) !important;
+  box-shadow: 0 12px 40px rgba(217, 144, 14, 0.45) !important;
+}
+
+.floating-logo-badge-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 720px) {
+  .floating-logo-badge {
+    bottom: 16px !important;
+    right: 16px !important;
+    width: 70px !important;
+    height: 70px !important;
+    border-width: 2.5px !important;
+    padding: 8px !important;
+  }
+}
