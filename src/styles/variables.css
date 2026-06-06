@@ -160,8 +160,8 @@ h1, h2, h3, h4, h5, h6,
 .logo-badge {
   position: relative !important;
   display: block !important;
-  width: 170px !important;
-  height: 50px !important;
+  width: 200px !important;
+  height: 64px !important;
   background: transparent !important;
   box-shadow: none !important;
   border: none !important;
@@ -172,14 +172,14 @@ h1, h2, h3, h4, h5, h6,
 
 @media (max-width: 1100px) {
   .logo-badge {
-    width: 140px !important;
-    height: 50px !important;
+    width: 160px !important;
+    height: 56px !important;
   }
 }
 
 @media (max-width: 720px) {
   .logo-badge {
-    width: 110px !important;
+    width: 125px !important;
     height: 44px !important;
   }
 }
@@ -189,8 +189,8 @@ h1, h2, h3, h4, h5, h6,
   top: 50% !important;
   left: 0 !important;
   transform: translateY(-50%) !important; /* Centered perfectly inside the header */
-  width: 170px !important;
-  height: 44px !important; /* Scaled down to fit header height limits */
+  width: 200px !important;
+  height: 60px !important; /* Larger height to fill the header space */
   object-fit: contain !important;
   display: block !important;
   z-index: 110 !important;
@@ -199,16 +199,16 @@ h1, h2, h3, h4, h5, h6,
 
 @media (max-width: 1100px) {
   .logo-badge-img {
-    width: 140px !important;
-    height: 40px !important;
+    width: 160px !important;
+    height: 52px !important;
     transform: translateY(-50%) !important;
   }
 }
 
 @media (max-width: 720px) {
   .logo-badge-img {
-    width: 110px !important;
-    height: 34px !important;
+    width: 125px !important;
+    height: 44px !important;
     transform: translateY(-50%) !important;
   }
 }
