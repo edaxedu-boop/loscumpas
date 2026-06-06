@@ -805,26 +805,28 @@ h1 {
   position: fixed !important;
   bottom: 24px !important;
   right: 24px !important;
-  width: 90px !important;
-  height: 90px !important;
-  background: #ffffff !important;
-  border: 3.5px solid #d9900e !important;
+  width: 170px !important; /* Doubled size for desktop */
+  height: 170px !important;
+  background: rgba(15, 10, 10, 0.82) !important; /* Dark transparent wine background */
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 4px solid #d9900e !important; /* Gold border */
   border-radius: 50% !important;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.22), 0 0 15px rgba(217, 144, 14, 0.25) !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45), 0 0 20px rgba(217, 144, 14, 0.3) !important;
   z-index: 9999 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   overflow: hidden !important;
-  padding: 10px !important;
+  padding: 18px !important;
   box-sizing: border-box !important;
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease !important;
   cursor: pointer !important;
 }
 
 .floating-logo-badge:hover {
-  transform: scale(1.1) rotate(5deg) !important;
-  box-shadow: 0 12px 40px rgba(217, 144, 14, 0.45) !important;
+  transform: scale(1.06) rotate(3deg) !important;
+  box-shadow: 0 16px 48px rgba(217, 144, 14, 0.5) !important;
 }
 
 .floating-logo-badge-img {
@@ -839,9 +841,9 @@ h1 {
   .floating-logo-badge {
     bottom: 16px !important;
     right: 16px !important;
-    width: 70px !important;
-    height: 70px !important;
-    border-width: 2.5px !important;
-    padding: 8px !important;
+    width: 110px !important; /* Doubled size for mobile */
+    height: 110px !important;
+    border-width: 3px !important;
+    padding: 12px !important;
   }
 }
