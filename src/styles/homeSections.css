@@ -1828,3 +1828,28 @@
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.8);
 }
+
+/* Position mobile subscribe button at the bottom-left, aligned with bottom-right floating logo */
+@media (max-width: 720px) {
+  .mobile-only-subscribe {
+    display: inline-flex !important;
+    position: absolute !important;
+    bottom: 52px !important; /* Centered vertically with the 120px tall logo at bottom: 16px */
+    left: 16px !important;
+    right: auto !important;
+    transform: none !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    min-width: 145px !important;
+    width: 145px !important;
+    height: 48px !important;
+    font-size: 15px !important;
+    z-index: 1000 !important;
+    box-shadow: 0 4px 15px rgba(255, 186, 31, 0.4) !important;
+  }
+
+  .mobile-only-subscribe:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 25px rgba(255, 186, 31, 0.75), inset 0 2px 0 rgba(255, 255, 255, 0.65) !important;
+  }
+}
