@@ -184,7 +184,7 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-.logo-badge-wrapper {
+.logo-badge-frame {
   position: absolute !important;
   top: 0 !important;
   left: 50% !important;
@@ -195,39 +195,47 @@ h1, h2, h3, h4, h5, h6,
   border-bottom-left-radius: 24px !important;
   border-bottom-right-radius: 24px !important;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15), 0 3px 8px rgba(0, 0, 0, 0.05) !important;
-  padding: 10px 12px 16px !important;
-  box-sizing: border-box !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  z-index: 110 !important;
+  z-index: -1 !important;
 }
 
-.logo-badge-wrapper img {
-  width: 100% !important;
-  height: 100% !important;
+.logo-badge-img {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -42%) !important;
+  width: 200px !important;
+  height: 110px !important;
   object-fit: contain !important;
   display: block !important;
+  z-index: 10 !important;
   max-width: none !important;
 }
 
 @media (max-width: 1100px) {
-  .logo-badge-wrapper {
+  .logo-badge-frame {
     width: 150px !important;
     height: 105px !important;
-    padding: 8px 10px 12px !important;
     border-bottom-left-radius: 18px !important;
     border-bottom-right-radius: 18px !important;
+  }
+  .logo-badge-img {
+    width: 160px !important;
+    height: 90px !important;
+    transform: translate(-50%, -38%) !important;
   }
 }
 
 @media (max-width: 720px) {
-  .logo-badge-wrapper {
+  .logo-badge-frame {
     width: 120px !important;
     height: 90px !important;
-    padding: 6px 8px 10px !important;
     border-bottom-left-radius: 14px !important;
     border-bottom-right-radius: 14px !important;
+  }
+  .logo-badge-img {
+    width: 130px !important;
+    height: 75px !important;
+    transform: translate(-50%, -36%) !important;
   }
 }
 

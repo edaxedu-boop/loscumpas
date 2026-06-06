@@ -42,12 +42,12 @@ import {
 function LogoBadge() {
   return (
     <div className="logo-badge" aria-label="Los cumpas de la suerte">
-      <div className="logo-badge-wrapper">
-        <img
-          src="https://res.cloudinary.com/dl1pgzshh/image/upload/v1780782601/ChatGPT_Image_6_jun_2026_16_48_19.png"
-          alt="Los Cumpas de la Suerte"
-        />
-      </div>
+      <div className="logo-badge-frame" />
+      <img
+        src="https://res.cloudinary.com/dl1pgzshh/image/upload/v1780782601/ChatGPT_Image_6_jun_2026_16_48_19.png"
+        alt="Los Cumpas de la Suerte"
+        className="logo-badge-img"
+      />
     </div>
   );
 }
